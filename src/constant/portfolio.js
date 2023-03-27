@@ -132,7 +132,7 @@ export const PORTFOLIO_CONSTANT = [
     colorPalette: "/images/portfolio/Kirby/Color Palette_Kirby.png",
     detailImage: [
       {
-        url: "/images/portfolio/Kirby/1_Ingame_Motion.gifg",
+        url: "/images/portfolio/Kirby/1_Ingame_Motion.gif",
         text: "플레이 화면",
         type: "vertical",
       },

@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { PROJECT_CONSTANT } from "../../../constant/project";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import ImageSlideModal from "../../../components/ImageSlideModal";
 

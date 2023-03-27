@@ -61,7 +61,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Pretendard', sans-serif;
 }
 
 /**
@@ -141,7 +141,7 @@ li {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: 'Pretendard',monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -182,7 +182,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: 'Pretendard',monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -720,6 +720,6 @@ textarea {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Pretendard', sans-serif;
 }
 `;
