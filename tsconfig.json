@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/pages/portfolio/index.jsx"
+, "src/feature/layout/footer/index.jsx", "src/feature/layout/index.jsx", "src/pages/portfolio/[name]/index.jsx", "src/components/ImageSlideModal/style.js", "src/hooks/useIntersectionObserver.jsx", "src/pages/project/index.jsx", "src/feature/home/HomeHeader/index.jsx"  ],
+  "exclude": ["node_modules"]
+}
