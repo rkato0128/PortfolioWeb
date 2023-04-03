@@ -3,6 +3,7 @@ export const PROJECT_CONSTANT = [
     name: "프로젝트 S",
     genre: ["모바일", "턴제 전략", "어반 판타지"],
     date: "2021.",
+    listDescription: "리스트의 설명 텍스트가 들어갑니다.",
     description:
       "모바일 턴제 전략 게임의 컨셉 UI를 작업했습니다.\n보라색의 키 컬러와, '별'이라는 심볼을 GUI에 최대한 녹여내며 현대 판타지라는 컨셉을 나타냈습니다.",
     iconUrl: [

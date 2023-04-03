@@ -4,11 +4,11 @@ function Footer() {
   return (
     <S.Container>
       <S.Wrapper>
-        <S.ProfileImg src="/images/profile.png" alt="profile" />
+        <S.ProfileImg src="/images/Profile.png" alt="profile" />
         <S.ProfileInfo>
           <S.Name>정동엽</S.Name>
           <S.Job>Game UI/UX Designer</S.Job>
-          <S.Email>hshs6349@gmail.com</S.Email>
+          <S.Email>rkato0128@naver.com</S.Email>
         </S.ProfileInfo>
         <S.ContactList>
           <div>Blog</div>
