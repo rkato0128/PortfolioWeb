@@ -19,11 +19,11 @@ function Project() {
               <p>{project.name}</p>
               <span>
                 {project.genre.map((item, index) =>
-                  item.length - 1 === index ? item : `${item} / `
+                  project.genre.length - 1 === index ? item : `${item} / `
                 )}
               </span>
               <span>{project.date}</span>
-              <span>{project.description}</span>
+              <span>{project.listDescription}</span>
               <S.IconWrapper>
                 {project.iconUrl.map((item) => (
                   <img key={item} src={item} alt="logo" />

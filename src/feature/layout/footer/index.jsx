@@ -11,11 +11,29 @@ function Footer() {
           <S.Email>rkato0128@naver.com</S.Email>
         </S.ProfileInfo>
         <S.ContactList>
-          <div>Blog</div>
+          <a
+            href="https://do-workspace.tistory.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Blog
+          </a>
           <hr />
-          <div>GitHub</div>
+          <a
+            href="https://github.com/rkato0128"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
           <hr />
-          <div>LinkedIn</div>
+          <a
+            href="https://www.linkedin.com/in/동엽-정-42ba44206/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </S.ContactList>
       </S.Wrapper>
     </S.Container>
@@ -27,7 +45,7 @@ export default Footer;
 const S = {
   Container: styled.footer`
     width: 100%;
-    background: #f6f6f6;
+    background: #eaeaeb;
   `,
   Wrapper: styled.div`
     display: flex;

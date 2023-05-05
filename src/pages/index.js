@@ -139,7 +139,6 @@ const Page = forwardRef(({ offset, setOffset, handleScroll }, ref) => {
       <ParallaxLayer
         offset={offset}
         speed={0.05}
-        onClick={setOffset}
         style={{ transform: `translateY(0px)` }}
       >
         <HomeHeader isSticky={false} />

@@ -47,8 +47,9 @@ const Header = forwardRef(({ isIntersecting }, ref) => {
       isSticky={isSticky}
       isMain={isMain}
     >
-      <S.Menu>
+      <S.Menu isSticky={isSticky}>
         <S.MenuItem
+          isSticky={isSticky}
           isSelected={router.pathname === "/"}
           onClick={() => router.push("/")}
         >
@@ -56,6 +57,7 @@ const Header = forwardRef(({ isIntersecting }, ref) => {
           {!isSticky && <span>Profile</span>}
         </S.MenuItem>
         <S.MenuItem
+          isSticky={isSticky}
           isSelected={router.pathname?.includes("portfolio")}
           onClick={() => router.push("/portfolio")}
         >
@@ -63,6 +65,7 @@ const Header = forwardRef(({ isIntersecting }, ref) => {
           {!isSticky && <span>Portfolio</span>}
         </S.MenuItem>
         <S.MenuItem
+          isSticky={isSticky}
           isSelected={router.pathname?.includes("project")}
           onClick={() => router.push("/project")}
         >

@@ -30,9 +30,12 @@ const S = {
     box-sizing: border-box;
 
     ${({ isMain }) =>
-      isMain &&
-      css`
-        margin: 0 auto;
-      `}
+      isMain
+        ? css`
+            margin: 0 auto;
+          `
+        : css`
+            min-height: calc(100vh - 180px - 232px);
+          `}
   `,
 };

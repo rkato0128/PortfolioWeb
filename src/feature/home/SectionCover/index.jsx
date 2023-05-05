@@ -26,7 +26,7 @@ const SectionCover = forwardRef(({ onClick }, ref) => {
         animate={{ y: 10 }}
         transition={{ repeat: Infinity, duration: 1, repeatType: "reverse" }}
       >
-        <ArrowLine width={16} height={16} onClick={onClick} />
+        <img src="/images/icon/mouse.svg" />
       </S.ArrowWrapper>
     </S.SectionCoverWrapper>
   );
@@ -94,7 +94,7 @@ const S = {
     width: 16px;
     height: 16px;
     left: 50%;
-    bottom: 60px;
+    bottom: 80px;
     transform: translate(-50%, -50%);
 
     cursor: pointer;

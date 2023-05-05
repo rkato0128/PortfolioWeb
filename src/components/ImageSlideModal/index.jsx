@@ -113,7 +113,7 @@ function ImageSlideModal({ images, selectedImageIndex, isOpen, handleClose }) {
                     right: `${i * 100}%`,
                   }}
                 >
-                  <img src={image.url} />
+                  <S.GameImg src={image.url} />
                 </motion.div>
               ))}
               <S.Prev onClick={() => handlePrev()}>
@@ -220,5 +220,10 @@ const S = {
       width: 350%;
       height: 250%;
     }
+  `,
+  GameImg: styled.img`
+    max-width: 1050px;
+    max-height: 1050px;
+    margin: 0 auto;
   `,
 };

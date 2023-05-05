@@ -9,11 +9,25 @@ function Contact() {
         rkato0128@naver.com
       </S.Email>
       <S.ContactList>
-        <div>Blog</div>
+        <a
+          href="https://do-workspace.tistory.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Blog
+        </a>
         <hr />
-        <div>GitHub</div>
+        <a href="https://github.com/rkato0128" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
         <hr />
-        <div>LinkedIn</div>
+        <a
+          href="https://www.linkedin.com/in/동엽-정-42ba44206/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
       </S.ContactList>
     </S.ContactWrapper>
   );

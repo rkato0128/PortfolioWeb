@@ -22,7 +22,7 @@ function ProjectDetail() {
                   <S.Name>{project.name}</S.Name>
                   <S.Text style={{ margin: "12px 0" }}>
                     {project.genre.map((item, index) =>
-                      item.length - 1 === index ? item : `${item} / `
+                      project.genre - 1 === index ? item : `${item} / `
                     )}
                   </S.Text>
                   <S.Text style={{ marginTop: "12px", fontWeight: 200 }}>
@@ -39,7 +39,9 @@ function ProjectDetail() {
                 </S.Toolbox>
                 <S.Line />
                 <S.GameDesc>
-                  <S.Text>{project.description}</S.Text>
+                  <S.Text
+                    dangerouslySetInnerHTML={{ __html: project.description }}
+                  />
                   <S.SmallText>{project.source}</S.SmallText>
                 </S.GameDesc>
               </S.InfoWrapper>

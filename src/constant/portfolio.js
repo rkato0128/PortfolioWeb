@@ -5,7 +5,7 @@ export const PORTFOLIO_CONSTANT = [
     date: "19.12. - 20.02.",
     listDescription: "리스트의 설명 텍스트가 들어갑니다.",
     description:
-      "사선 형태와 남색을 SF 컨셉의 핵심 비주얼 요소로 잡고,\n세로 인터페이스에서의 편의성을 중점으로 작업하였습니다.",
+      "사선 형태와 남색을 SF 컨셉의 핵심 비주얼 요소로 잡고,<br/>세로 인터페이스에서의 편의성을 중점으로 작업하였습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Ae.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -64,7 +64,7 @@ export const PORTFOLIO_CONSTANT = [
     date: "20.03. - 20.05.",
     listDescription: "리스트의 설명 텍스트가 들어갑니다.",
     description:
-      "모바일이라는 기기에 맞게, 세키로의 동양적인 분위기를\n대중적인 심플함으로 나타내는 것에 집중하며 UI를 제작하였습니다.",
+      "모바일이라는 기기에 맞게, 세키로의 동양적인 분위기를<br/>대중적인 심플함으로 나타내는 것에 집중하며 UI를 제작하였습니다.",
     iconUrl: ["/images/icon/Icon_Tool_Ps.png", "/images/icon/Icon_Tool_Ai.png"],
     imageUrl: [
       "/images/portfolio/SekiroM/1_Ingame.png",
@@ -115,7 +115,7 @@ export const PORTFOLIO_CONSTANT = [
     date: "19.10. - 19.12.",
     listDescription: "리스트의 설명 텍스트가 들어갑니다.",
     description:
-      "별의 커비 IP를 바탕으로, 캐주얼 게임 컨셉으로 디자인을 진행했습니다.\n아케이드 게임기의 디자인적 요소를 UI에 녹여내려고 노력했습니다.",
+      "별의 커비 IP를 바탕으로, 캐주얼 게임 컨셉으로 디자인을 진행했습니다.<br/>아케이드 게임기의 디자인적 요소를 UI에 녹여내려고 노력했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Ae.png",
       "/images/icon/Icon_Tool_Ps.png",

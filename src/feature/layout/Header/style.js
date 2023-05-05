@@ -40,12 +40,18 @@ export const S = {
   `,
   Menu: styled.ul`
     display: grid;
-    align-items: center;
     width: 588px;
     height: 100%;
     margin: 0 auto;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
+
+    ${({ isSticky }) =>
+      !isSticky &&
+      css`
+        padding-top: 60px;
+        padding-bottom: 24px;
+      `}
   `,
   MenuItem: styled.li`
     display: flex;

@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { PORTFOLIO_CONSTANT } from "../../../constant/portfolio";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import ImageSlideModal from "../../../components/ImageSlideModal";
 
@@ -23,7 +22,7 @@ function PortfolioDetail() {
                   <S.Name>{portfolio.name}</S.Name>
                   <S.Text style={{ margin: "12px 0" }}>
                     {portfolio.genre.map((item, index) =>
-                      item.length - 1 === index ? item : `${item} / `
+                      portfolio.genre.length - 1 === index ? item : `${item} / `
                     )}
                   </S.Text>
                   <S.Text style={{ marginTop: "12px", fontWeight: 200 }}>
@@ -40,7 +39,9 @@ function PortfolioDetail() {
                 </S.Toolbox>
                 <S.Line />
                 <S.GameDesc>
-                  <S.Text>{portfolio.description}</S.Text>
+                  <S.Text
+                    dangerouslySetInnerHTML={{ __html: portfolio.description }}
+                  />
                   <S.SmallText>{portfolio.source}</S.SmallText>
                 </S.GameDesc>
               </S.InfoWrapper>

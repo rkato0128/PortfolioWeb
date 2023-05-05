@@ -18,11 +18,11 @@ function Portfolio() {
               <p>{portfolio.name}</p>
               <span>
                 {portfolio.genre.map((item, index) =>
-                  item.length - 1 === index ? item : `${item} / `
+                  portfolio.genre.length - 1 === index ? item : `${item} / `
                 )}
               </span>
               <span>{portfolio.date}</span>
-              <span>{portfolio.description}</span>
+              <span>{portfolio.listDescription}</span>
               <S.IconWrapper>
                 {portfolio.iconUrl.map((item) => (
                   <img key={item} src={item} alt="logo" />
