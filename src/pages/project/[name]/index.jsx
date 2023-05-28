@@ -17,80 +17,119 @@ function ProjectDetail() {
         (project) =>
           project.name === name && (
             <S.Wrapper>
-              <S.InfoWrapper>
-                <S.GameInfo>
-                  <S.Name>{project.name}</S.Name>
-                  <S.Text style={{ margin: "12px 0" }}>
-                    {project.genre.map((item, index) =>
-                      project.genre - 1 === index ? item : `${item} / `
-                    )}
-                  </S.Text>
-                  <S.Text style={{ marginTop: "12px", fontWeight: 200 }}>
-                    {project.date}
-                  </S.Text>
-                </S.GameInfo>
-                <S.Toolbox>
-                  <S.SmallText>Tool Used</S.SmallText>
-                  <S.IconWrapper>
-                    {project.iconUrl.map((item) => (
-                      <img key={item} src={item} alt="logo" />
-                    ))}
-                  </S.IconWrapper>
-                </S.Toolbox>
-                <S.Line />
-                <S.GameDesc>
-                  <S.Text
-                    dangerouslySetInnerHTML={{ __html: project.description }}
-                  />
-                  <S.SmallText>{project.source}</S.SmallText>
-                </S.GameDesc>
-              </S.InfoWrapper>
-              {(project.keyword ||
-                project.keyShape ||
-                project.colorPalette) && (
-                <S.VisualConcept>
-                  {project.keyword && project.keyword.length > 0 && (
-                    <S.Keyword>
-                      <span>KEYWORD</span>
-                      <div>
-                        {project.keyword?.map((item) => (
-                          <p key={item}>{item}</p>
-                        ))}
-                      </div>
-                    </S.Keyword>
-                  )}
-                  {project.keyShape && (
-                    <S.KeyShapre>
-                      <span>KEY SHAPE</span>
-                      <img src={project.keyShape} alt={"keyShape"} />
-                    </S.KeyShapre>
-                  )}
-                  {project.colorPalette && (
-                    <S.ColorPalette>
-                      <span>COLOR</span>
-                      <img src={project.colorPalette} alt={"colorPalette"} />
-                    </S.ColorPalette>
-                  )}
-                </S.VisualConcept>
-              )}
-              <S.DetailImageWrapper>
-                {project.detailImage.map((item, index) => (
-                  <S.DetailImage
-                    key={index}
-                    onClick={() => {
-                      setIsOpen(true);
-                      setSelectedIndex(index);
-                    }}
-                  >
-                    <S.GameImage
-                      viewType={item.type}
-                      src={item.url}
-                      alt="게임 이미지"
+              <S.ContentWrapper>
+                <S.InfoWrapper>
+                  <S.GameInfo>
+                    <S.Name>{project.name}</S.Name>
+                    <S.Text style={{ margin: "12px 0" }}>
+                      {project.genre.map((item, index) =>
+                        project.genre - 1 === index ? item : `${item} / `
+                      )}
+                    </S.Text>
+                    <S.Text style={{ marginTop: "12px", fontWeight: 200 }}>
+                      {project.date}
+                    </S.Text>
+                  </S.GameInfo>
+                  <S.Toolbox>
+                    <S.SmallText>Tool Used</S.SmallText>
+                    <S.IconWrapper>
+                      {project.iconUrl.map((item) => (
+                        <img key={item} src={item} alt="logo" />
+                      ))}
+                    </S.IconWrapper>
+                  </S.Toolbox>
+                  <S.Line />
+                  <S.GameDesc>
+                    <S.Text
+                      dangerouslySetInnerHTML={{ __html: project.description }}
                     />
-                    <span>{item.text}</span>
-                  </S.DetailImage>
-                ))}
-              </S.DetailImageWrapper>
+                    <S.SmallText>{project.source}</S.SmallText>
+                  </S.GameDesc>
+                </S.InfoWrapper>
+                {(project.keyword ||
+                  project.keyShape ||
+                  project.colorPalette) && (
+                  <S.VisualConcept>
+                    {project.keyword && project.keyword.length > 0 && (
+                      <S.Keyword>
+                        <span>KEYWORD</span>
+                        <div>
+                          {project.keyword?.map((item) => (
+                            <p key={item}>{item}</p>
+                          ))}
+                        </div>
+                      </S.Keyword>
+                    )}
+                    {project.keyShape && (
+                      <S.KeyShapre>
+                        <span>KEY SHAPE</span>
+                        <img src={project.keyShape} alt={"keyShape"} />
+                      </S.KeyShapre>
+                    )}
+                    {project.colorPalette && (
+                      <S.ColorPalette>
+                        <span>COLOR</span>
+                        <img src={project.colorPalette} alt={"colorPalette"} />
+                      </S.ColorPalette>
+                    )}
+                  </S.VisualConcept>
+                )}
+                <S.DetailImageWrapper>
+                  {project.detailImage.map((item, index) => (
+                    <S.DetailImage
+                      key={index}
+                      onClick={() => {
+                        setIsOpen(true);
+                        setSelectedIndex(index);
+                      }}
+                    >
+                      <S.GameImage
+                        viewType={item.type}
+                        src={item.url}
+                        alt="게임 이미지"
+                      />
+                      <span>{item.text}</span>
+                    </S.DetailImage>
+                  ))}
+                </S.DetailImageWrapper>
+              </S.ContentWrapper>
+              <S.PorjectHistoryWrapper>
+                <S.ProjectHistory>
+                  {project.history.map((item, idx) => (
+                    <S.HistoryWrapper key={idx}>
+                      <S.HistoryTitle>{item.name}</S.HistoryTitle>
+                      <hr />
+                      <S.HistoryContent>
+                        {item.list.map((conetnt, idx) => (
+                          <ul key={idx}>
+                            <li>{conetnt.title}</li>
+                            <ol>
+                              {conetnt.content.map((list, idx) => {
+                                if (list.type === "text") {
+                                  return <li key={idx}>{list.text}</li>;
+                                }
+
+                                if (list.type === "list") {
+                                  return (
+                                    <>
+                                      <li key={idx}>{list.text}</li>
+                                      <ol>
+                                        {list.content.map((text, idx) => (
+                                          <li key={idx}>{text}</li>
+                                        ))}
+                                      </ol>
+                                    </>
+                                  );
+                                }
+                              })}
+                            </ol>
+                          </ul>
+                        ))}
+                      </S.HistoryContent>
+                    </S.HistoryWrapper>
+                  ))}
+                </S.ProjectHistory>
+              </S.PorjectHistoryWrapper>
               <ImageSlideModal
                 images={project.detailImage}
                 isOpen={isOpen}
@@ -106,9 +145,13 @@ function ProjectDetail() {
 
 const S = {
   Container: styled.div`
-    width: 1200px;
+    /* width: 1200px;
     margin: 0 auto;
-    padding: 120px 0 320px 0;
+    padding: 120px 0 320px 0; */
+  `,
+  ContentWrapper: styled.div`
+    padding-top: 120px;
+    padding-bottom: 160px;
   `,
   Wrapper: styled.div`
     display: flex;
@@ -236,6 +279,56 @@ const S = {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  `,
+  PorjectHistoryWrapper: styled.div`
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    background-color: #f6f6f6;
+  `,
+  ProjectHistory: styled.div`
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+  `,
+  HistoryWrapper: styled.div`
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2b2b2f;
+
+    hr {
+      margin: 0;
+      margin-left: 38px;
+      margin-right: 48px;
+      width: 2px;
+      height: inherit;
+      background-color: #d9d9d9;
+    }
+  `,
+  HistoryTitle: styled.div`
+    width: 344px;
+    text-align: right;
+  `,
+  HistoryContent: styled.ul`
+    font-weight: 300;
+    li::before {
+      content: "•";
+      border-radius: 1ch;
+      padding-inline: 1ch;
+      margin-inline-end: 1ch;
+      font-size: 4px;
+    }
+
+    ol {
+      margin-top: 5px;
+      margin-bottom: 25px;
+      padding-inline-start: 25px;
+    }
   `,
 };
 

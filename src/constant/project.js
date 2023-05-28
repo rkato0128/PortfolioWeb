@@ -39,5 +39,73 @@ export const PROJECT_CONSTANT = [
         type: "vertical",
       },
     ],
+    history: [
+      {
+        name: "프로젝트에서 작업한 내용",
+        list: [
+          {
+            title: "UI*UX",
+            content: [
+              { text: "GUI, 연출 및 엔진 작업", type: "text" },
+              { text: "UI 셰이더 작업", type: "text" },
+              { text: "UX 텍스트 및 번역 관리", type: "text" },
+              { text: "화면 명세 기획", type: "text" },
+            ],
+          },
+          {
+            title: "아트",
+            content: [
+              { text: "캐릭터 메카 장비 리소스 작업", type: "text" },
+              { text: "숲 배경 리소스 작업", type: "text" },
+              { text: "리소스 외주 관리", type: "text" },
+            ],
+          },
+          {
+            title: "셰이더 작성",
+            content: [
+              { text: "캐릭터 초기 셰이더 작업", type: "text" },
+              {
+                text: "TMP 셰이더 작업",
+                content: ["text", "text"],
+                type: "list",
+              },
+              { text: "파티클 시스템 Custom Data 셰이더", type: "text" },
+              { text: "연출용 셰이더 작업", type: "text" },
+            ],
+          },
+        ],
+      },
+      {
+        name: "프로젝트에서 작업한 내용",
+        list: [
+          {
+            title: "UI*UX",
+            content: [
+              { text: "GUI, 연출 및 엔진 작업", type: "text" },
+              { text: "UI 셰이더 작업", type: "text" },
+              { text: "UX 텍스트 및 번역 관리", type: "text" },
+              { text: "화면 명세 기획", type: "text" },
+            ],
+          },
+          {
+            title: "아트",
+            content: [
+              { text: "캐릭터 메카 장비 리소스 작업", type: "text" },
+              { text: "숲 배경 리소스 작업", type: "text" },
+              { text: "리소스 외주 관리", type: "text" },
+            ],
+          },
+          {
+            title: "셰이더 작성",
+            content: [
+              { text: "캐릭터 초기 셰이더 작업", type: "text" },
+              { text: "TMP 셰이더 작업", type: "text" },
+              { text: "파티클 시스템 Custom Data 셰이더", type: "text" },
+              { text: "연출용 셰이더 작업", type: "text" },
+            ],
+          },
+        ],
+      },
+    ],
   },
 ];
