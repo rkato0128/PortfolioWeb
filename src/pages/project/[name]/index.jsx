@@ -152,6 +152,8 @@ const S = {
   ContentWrapper: styled.div`
     padding-top: 120px;
     padding-bottom: 160px;
+    margin: 0 auto;
+    text-align: center;
   `,
   Wrapper: styled.div`
     display: flex;
