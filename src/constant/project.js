@@ -18,7 +18,7 @@ export const PROJECT_CONSTANT = [
       "/images/project/SpookyFriends/Movie_Battle.gif",
     ],
     type: "vertical",
-    // source: "캐릭터 이미지는 카운터사이드의 리소스를 사용하였습니다.",
+    source: "",
 
     // 키워드~컬러 팔레트 없는 경우는 주석 처리
     // keyword: ["키워드1", "키워드2", "키워드3"],
