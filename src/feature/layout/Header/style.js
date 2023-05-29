@@ -6,7 +6,7 @@ export const S = {
     position: sticky;
     width: 100%;
     height: 180px;
-    background: #f3f3f3;
+    background: #f6f6f6;
     top: 0;
     z-index: 1;
     visibility: visible;
@@ -21,7 +21,7 @@ export const S = {
         ${({ isSticky }) =>
           isSticky &&
           css`
-            background: #f3f3f3;
+            background: #f6f6f6;
           `}
         li {
           color: white;
