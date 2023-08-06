@@ -21,9 +21,7 @@ function PortfolioDetail() {
                 <S.GameInfo>
                   <S.Name>{portfolio.name}</S.Name>
                   <S.Text style={{ margin: "12px 0" }}>
-                    {portfolio.genre.map((item, index) =>
-                      portfolio.genre.length - 1 === index ? item : `${item} / `
-                    )}
+                    {portfolio.genre.join(" / ")}
                   </S.Text>
                   <S.Text style={{ marginTop: "12px", fontWeight: 200 }}>
                     {portfolio.date}
@@ -42,7 +40,9 @@ function PortfolioDetail() {
                   <S.Text
                     dangerouslySetInnerHTML={{ __html: portfolio.description }}
                   />
-                  <S.SmallText>{portfolio.source}</S.SmallText>
+                  {portfolio.source.length > 0 && (
+                    <S.SmallText>{portfolio.source}</S.SmallText>
+                  )}
                 </S.GameDesc>
               </S.InfoWrapper>
               {(portfolio.keyword ||
@@ -116,6 +116,7 @@ const S = {
     align-items: center;
     justify-content: center;
     color: #2b2b2f;
+    text-align: center;
   `,
   InfoWrapper: styled.div`
     display: flex;

@@ -8,7 +8,10 @@ function Footer() {
         <S.ProfileInfo>
           <S.Name>정동엽</S.Name>
           <S.Job>Game UI/UX Designer</S.Job>
-          <S.Email>rkato0128@naver.com</S.Email>
+          <S.Email>
+            <img src="/images/icon/Icon_Mail.svg" alt="mail icon" />
+            rkato0128@naver.com
+          </S.Email>
         </S.ProfileInfo>
         <S.ContactList>
           <a
@@ -79,6 +82,9 @@ const S = {
     line-height: 24px;
   `,
   Email: styled.span`
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-weight: 200;
     font-size: 20px;
     line-height: 24px;

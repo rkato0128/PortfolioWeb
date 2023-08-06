@@ -17,11 +17,7 @@ function Project() {
           >
             <S.Info>
               <p>{project.name}</p>
-              <span>
-                {project.genre.map((item, index) =>
-                  project.genre.length - 1 === index ? item : `${item} / `
-                )}
-              </span>
+              <span>{project.genre.join(" / ")}</span>
               <span>{project.date}</span>
               <span>{project.listDescription}</span>
               <S.IconWrapper>

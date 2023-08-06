@@ -19,8 +19,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "vertical",
     // detail page
-    source:
-      "캐릭터와 배경 이미지는 얼티밋 스쿨과 소울워커 리소스를 사용하였습니다.",
+    source: "",
     keyword: ["세로형", "사이버틱", "홀로그램"],
     keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",

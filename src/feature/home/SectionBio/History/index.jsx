@@ -31,7 +31,10 @@ function History() {
                   <p>{item.job}</p>
                   <span>{item.date}</span>
                   {item.workDetail.map((item) => (
-                    <span key={item}>{item}</span>
+                    <span
+                      key={item}
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
                   ))}
                 </S.Info>
               </S.HistoryItem>
@@ -64,6 +67,7 @@ const S = {
 
     .title {
       margin-bottom: 40px;
+      font-size: 20px;
     }
   `,
   HistoryList: styled.ul`

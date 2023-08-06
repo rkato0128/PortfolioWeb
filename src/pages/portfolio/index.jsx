@@ -16,11 +16,7 @@ function Portfolio() {
           >
             <S.Info>
               <p>{portfolio.name}</p>
-              <span>
-                {portfolio.genre.map((item, index) =>
-                  portfolio.genre.length - 1 === index ? item : `${item} / `
-                )}
-              </span>
+              <span>{portfolio.genre.join(" / ")}</span>
               <span>{portfolio.date}</span>
               <span>{portfolio.listDescription}</span>
               <S.IconWrapper>

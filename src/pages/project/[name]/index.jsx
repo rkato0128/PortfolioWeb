@@ -22,9 +22,7 @@ function ProjectDetail() {
                   <S.GameInfo>
                     <S.Name>{project.name}</S.Name>
                     <S.Text style={{ margin: "12px 0" }}>
-                      {project.genre.map((item, index) =>
-                        project.genre - 1 === index ? item : `${item} / `
-                      )}
+                      {project.genre.join(" / ")}
                     </S.Text>
                     <S.Text style={{ marginTop: "12px", fontWeight: 200 }}>
                       {project.date}
@@ -43,7 +41,9 @@ function ProjectDetail() {
                     <S.Text
                       dangerouslySetInnerHTML={{ __html: project.description }}
                     />
-                    <S.SmallText>{project.source}</S.SmallText>
+                    {project.source.length > 0 && (
+                      <S.SmallText>{project.source}</S.SmallText>
+                    )}
                   </S.GameDesc>
                 </S.InfoWrapper>
                 {(project.keyword ||
@@ -102,20 +102,41 @@ function ProjectDetail() {
                       <S.HistoryContent>
                         {item.list.map((conetnt, idx) => (
                           <ul key={idx}>
-                            <li>{conetnt.title}</li>
+                            <li
+                              dangerouslySetInnerHTML={{
+                                __html: conetnt.title,
+                              }}
+                            />
                             <ol>
                               {conetnt.content.map((list, idx) => {
                                 if (list.type === "text") {
-                                  return <li key={idx}>{list.text}</li>;
+                                  return (
+                                    <li
+                                      key={idx}
+                                      dangerouslySetInnerHTML={{
+                                        __html: list.text,
+                                      }}
+                                    />
+                                  );
                                 }
 
                                 if (list.type === "list") {
                                   return (
                                     <>
-                                      <li key={idx}>{list.text}</li>
+                                      <li
+                                        key={idx}
+                                        dangerouslySetInnerHTML={{
+                                          __html: list.text,
+                                        }}
+                                      />
                                       <ol>
                                         {list.content.map((text, idx) => (
-                                          <li key={idx}>{text}</li>
+                                          <li
+                                            key={idx}
+                                            dangerouslySetInnerHTML={{
+                                              __html: text,
+                                            }}
+                                          />
                                         ))}
                                       </ol>
                                     </>
@@ -154,6 +175,7 @@ const S = {
     padding-bottom: 160px;
     margin: 0 auto;
     text-align: center;
+    width: 1200px;
   `,
   Wrapper: styled.div`
     display: flex;
@@ -161,6 +183,7 @@ const S = {
     align-items: center;
     justify-content: center;
     color: #2b2b2f;
+    text-align: center;
   `,
   InfoWrapper: styled.div`
     display: flex;
@@ -294,6 +317,10 @@ const S = {
     display: flex;
     flex-direction: column;
     gap: 96px;
+
+    a {
+      color: #0000ff;
+    }
   `,
   HistoryWrapper: styled.div`
     display: flex;
@@ -307,17 +334,18 @@ const S = {
       margin: 0;
       margin-left: 38px;
       margin-right: 48px;
-      width: 2px;
+      min-width: 2px;
       height: inherit;
       background-color: #d9d9d9;
     }
   `,
   HistoryTitle: styled.div`
-    width: 344px;
+    min-width: 344px;
     text-align: right;
   `,
   HistoryContent: styled.ul`
     font-weight: 300;
+    text-align: left;
     li::before {
       content: "•";
       border-radius: 1ch;

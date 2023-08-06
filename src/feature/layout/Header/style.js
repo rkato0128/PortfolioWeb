@@ -49,7 +49,7 @@ export const S = {
     ${({ isSticky }) =>
       !isSticky &&
       css`
-        padding-top: 60px;
+        padding-top: 24px;
         padding-bottom: 24px;
       `}
   `,
@@ -62,6 +62,10 @@ export const S = {
     opacity: 0.4;
     cursor: pointer;
 
+    span {
+      font-weight: 200;
+      font-size: 20px;
+    }
     ${({ isSelected }) =>
       isSelected &&
       css`
