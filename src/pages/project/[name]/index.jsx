@@ -319,7 +319,7 @@ const S = {
     gap: 96px;
 
     a {
-      color: #0000ff;
+      color: #1779EC;
     }
   `,
   HistoryWrapper: styled.div`
