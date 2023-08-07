@@ -178,13 +178,13 @@ export const PROJECT_CONSTANT = [
             title: "유니티 버텍스 셰이더 입문",
             content: [
               {
-                text: "유령다운 알파 그라데이션과 캐릭터 바리에이션을 위해 유령 캐릭터의 셰이더를 작업하며 버텍스 셰이더에 입문했습니다.<br/>모델의 버텍스 포지션 값을 사용해서 그라데이션의 범위를 자유롭게 조정 가능하도록 작성했습니다. 서페이스 셰이더에서 버텍스 셰이더를 어떻게 사용해야 하는지와 구조체를 어떻게 수정해야 하는지 배울 수 있었습니다.",
+                text: `유령다운 알파 그라데이션과 캐릭터 바리에이션을 위해 유령 캐릭터의 셰이더를 작업하며 버텍스 셰이더에 입문했습니다.<br/>모델의 버텍스 포지션 값을 사용해서 그라데이션의 범위를 자유롭게 조정 가능하도록 작성했습니다. 서페이스 셰이더에서 버텍스 셰이더를 어떻게 사용해야 하는지와 구조체를 어떻게 수정해야 하는지 배울 수 있었습니다.<br/><br/><a href="https://do-workspace.tistory.com/36" target="_blank">관련 블로그 포스팅</a>`,
                 type: "text",
               },
-              {
-                text: `<a href="https://do-workspace.tistory.com/36" target="_blank">관련 블로그 포스팅</a>`,
-                type: "text",
-              },
+              // {
+              //   text: `<a href="https://do-workspace.tistory.com/36" target="_blank">관련 블로그 포스팅</a>`,
+              //   type: "text",
+              // },
             ],
           },
           {
