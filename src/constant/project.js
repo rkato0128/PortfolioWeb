@@ -182,13 +182,13 @@ export const PROJECT_CONSTANT = [
                 type: "text",
               },
               {
-                text: `<a href="관련 블로그 포스팅" target="_blank">https://do-workspace.tistory.com/36</a>`,
+                text: `<a href="https://do-workspace.tistory.com/36" target="_blank">관련 블로그 포스팅</a>`,
                 type: "text",
               },
             ],
           },
           {
-            title: `<a href="프로젝트 회고 포스팅" target="_blank">https://do-workspace.tistory.com/43</a>`,
+            title: `<a href="https://do-workspace.tistory.com/43" target="_blank">프로젝트 회고 포스팅</a>`,
             content: [],
           },
         ],
