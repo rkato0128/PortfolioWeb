@@ -70,7 +70,7 @@ export const PORTFOLIO_CONSTANT = [
       "/images/portfolio/SekiroM/2_Main.png",
     ],
     type: "horizontal",
-    source: "캐릭터와 배경, 아이템 이미지는 세키로의 리소스를 사용하였습니다.",
+    source: "캐릭터와 배경, 아이템 이미지는 세키로의 리소스를 사용하였습니다.<br/>줄바꿈 테스트",
     keyword: ["동양적인", "어두운", "심플한"],
     keyShape: "/images/portfolio/SekiroM/KeyShape_Sekiro.png",
     colorPalette: "/images/portfolio/SekiroM/Color Palette_Sekiro.png",
