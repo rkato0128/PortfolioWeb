@@ -1,5 +1,63 @@
 export const PORTFOLIO_CONSTANT = [
   {
+    name: "콘솔 RPG 컨셉",
+    genre: ["콘솔", "RPG", "중세 판타지"],
+    date: "19.12. - 20.02.",
+    listDescription: "",
+    description:
+      "사선 형태와 남색을 SF 컨셉의 핵심 비주얼 요소로 잡고,<br/>세로 인터페이스에서의 편의성을 중점으로 작업하였습니다.",
+    iconUrl: [
+      "/images/icon/Icon_Tool_Ae.png",
+      "/images/icon/Icon_Tool_Ps.png",
+      "/images/icon/Icon_Tool_Ai.png",
+      "/images/icon/Icon_Tool_Unreal.png",
+    ],
+    imageUrl: [
+      "/images/portfolio/ConsoleRPG/Honeycam 2023-09-06 22-54-14.webp",
+      "/images/portfolio/ProjectCC/2_Result_motion.gif",
+    ],
+    type: "horizontal",
+    // detail page
+    source: "",
+    keyword: ["세로형", "사이버틱", "홀로그램"],
+    keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
+    colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
+    detailImage: [
+      {
+        url: "/images/portfolio/ProjectCC/1_Ingame UI.png",
+        text: "플레이 화면",
+        type: "vertical",
+      },
+      {
+        url: "/images/portfolio/ProjectCC/2_Result_motion.gif",
+        text: "전투 결과",
+        type: "vertical",
+      },
+      {
+        url: "/images/portfolio/ProjectCC/3_Shop.png",
+        text: "캐릭터 뽑기",
+        type: "vertical",
+      },
+      {
+        url: "/images/portfolio/ProjectCC/4_CharacterInfo.png",
+        text: "캐릭터 정보",
+        type: "vertical",
+      },
+      {
+        url: "/images/portfolio/ProjectCC/5_Skill.png",
+        text: "스킬 성장",
+        type: "vertical",
+      },
+      {
+        url: "/images/portfolio/ProjectCC/6_Resources.jpg",
+        text: "UI 리소스",
+        type: "vertical",
+      },
+    ],
+  },
+
+
+  {
     name: "수집형 RPG 컨셉",
     genre: ["모바일", "수집형 RPG", "SF"],
     date: "19.12. - 20.02.",
@@ -70,7 +128,7 @@ export const PORTFOLIO_CONSTANT = [
       "/images/portfolio/SekiroM/2_Main.png",
     ],
     type: "horizontal",
-    source: "캐릭터와 배경, 아이템 이미지는 세키로의 리소스를 사용하였습니다.<br/>줄바꿈 테스트",
+    source: "캐릭터와 배경, 아이템 이미지는 세키로의 리소스를 사용하였습니다.",
     keyword: ["동양적인", "어두운", "심플한"],
     keyShape: "/images/portfolio/SekiroM/KeyShape_Sekiro.png",
     colorPalette: "/images/portfolio/SekiroM/Color Palette_Sekiro.png",
