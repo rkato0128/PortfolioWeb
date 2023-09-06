@@ -14,7 +14,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     imageUrl: [
       "/images/portfolio/ConsoleRPG/Honeycam 2023-09-06 22-54-14.webp",
-      "/images/portfolio/ProjectCC/2_Result_motion.gif",
+      "/images/portfolio/ConsoleRPG/Honeycam 2023-09-06 22-54-14.webp",
     ],
     type: "horizontal",
     // detail page
