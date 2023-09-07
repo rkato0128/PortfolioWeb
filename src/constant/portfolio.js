@@ -2,19 +2,18 @@ export const PORTFOLIO_CONSTANT = [
   {
     name: "콘솔 RPG 컨셉",
     genre: ["콘솔", "RPG", "중세 판타지"],
-    date: "19.12. - 20.02.",
+    date: "23.05. - 23.08.",
     listDescription: "",
     description:
       "사선 형태와 남색을 SF 컨셉의 핵심 비주얼 요소로 잡고,<br/>세로 인터페이스에서의 편의성을 중점으로 작업하였습니다.",
     iconUrl: [
-      "/images/icon/Icon_Tool_Ae.png",
+      "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
-      "/images/icon/Icon_Tool_Unreal.png",
     ],
     imageUrl: [
-      "/images/portfolio/ConsoleRPG/Honeycam 2023-09-06 22-54-14.webp",
-      "/images/portfolio/ConsoleRPG/Honeycam 2023-09-06 22-54-14.webp",
+      "/images/portfolio/ConsoleRPG/Inven_Open.webp",
+      "/images/portfolio/ConsoleRPG/Skill.webp",
     ],
     type: "horizontal",
     // detail page
@@ -24,34 +23,48 @@ export const PORTFOLIO_CONSTANT = [
     colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
     detailImage: [
       {
-        url: "/images/portfolio/ProjectCC/1_Ingame UI.png",
-        text: "플레이 화면",
-        type: "vertical",
+        // 1st
+        url: "/images/portfolio/ConsoleRPG/SocialMenu.webp",
+        text: "전투",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/ProjectCC/2_Result_motion.gif",
-        text: "전투 결과",
-        type: "vertical",
+        url: "/images/portfolio/ConsoleRPG/GetItem.webp",
+        text: "아이템 획득",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/ProjectCC/3_Shop.png",
-        text: "캐릭터 뽑기",
-        type: "vertical",
+        url: "/images/portfolio/ConsoleRPG/SocialMenu.webp",
+        text: "소셜 메뉴",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/ProjectCC/4_CharacterInfo.png",
-        text: "캐릭터 정보",
-        type: "vertical",
+        // 2nd
+        url: "/images/portfolio/ConsoleRPG/Inven_Open.webp",
+        text: "인벤토리",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/ProjectCC/5_Skill.png",
-        text: "스킬 성장",
-        type: "vertical",
+        
+        url: "/images/portfolio/ConsoleRPG/Skill.webp",
+        text: "스킬 습득",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/ProjectCC/6_Resources.jpg",
-        text: "UI 리소스",
-        type: "vertical",
+        url: "/images/portfolio/ConsoleRPG/Dialog.webp",
+        text: "NPC 대화",
+        type: "horizontal",
+      },
+      {
+        // 3rd
+        url: "/images/portfolio/ConsoleRPG/WorldMap.webp",
+        text: "월드맵",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/ConsoleRPG/Inven_KeyChange.webp",
+        text: "컨트롤러 변경",
+        type: "horizontal",
       },
     ],
   },

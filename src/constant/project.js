@@ -195,12 +195,7 @@ export const PROJECT_CONSTANT = [
           {
             title: "셰이더 작성",
             content: [
-              {
-                // 들여쓰기 텍스트
-                text: "UI 셰이더 작업",
-                content: ["추가 블렌딩 모드 셰이더", "LED 셰이더", "알파 그라데이션 셰이더", "SDF 셰이더", "월드맵 셰이더 (클라이언트 개발자와 협업)", "재련 레벨 셰이더 (클라이언트 개발자와 협업)", "Text Mesh Pro 셰이더 및 스크립트 - 추가 Underlay 옵션"],
-                type: "list",
-              },
+              { text: "UI 셰이더 작업", type: "text" },
               { text: "캐릭터 셰이더 (클라이언트 개발자와 협업)", type: "text" },
               { text: "VFX 바리에이션 셰이더 - 파티클 시스템의 CustomData를 통해서 이펙트 텍스처의 색 조정", type: "text" },
               // 들여쓰기 두번 텍스트 작성 예
@@ -214,17 +209,8 @@ export const PROJECT_CONSTANT = [
           {
             title: "C# 스크립트 작성",
             content: [
-              {
-                text: "아트 리소스 작업 효율화",
-                content: ["Order In Layer 변경 스크립트", "애니메이션 키 일괄 수정 스크립트", "VFX 테스트 환경 작업 - 서버 연결 없이 전체적인 이펙트 동작을 확인할 수 있도록"],
-                type: "list",
-              },
-              {
-                // 들여쓰기 텍스트
-                text: "UI 연출용 스크립트",
-                content: ["텍스트 출력 연출 스크립트"],
-                type: "list",
-              },
+              { text: "아트 리소스 작업 효율화", type: "text" },
+              { text: "UI 연출용 스크립트", type: "text" },
             ],
           },
         ],
