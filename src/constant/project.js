@@ -13,7 +13,7 @@ export const PROJECT_CONSTANT = [
       "/images/icon/Icon_Tool_Figma.png",
     ],
     imageUrl: [
-      "/images/project/Doge/0_Tiltle.webp",
+      "/images/project/Doge/0_Title.jpg",
       "/images/project/Doge/2_Play.webp",
       "/images/project/Doge/3_Result_Success.webp",
       "/images/project/Doge/7_Inventory.png",
@@ -28,12 +28,12 @@ export const PROJECT_CONSTANT = [
     detailImage: [
       {
         // 1st
-        url: "/images/project/Doge/0_Tiltle.webp",
+        url: "/images/project/Doge/0_Title.jpg",
         text: "타이틀 화면",
         type: "vertical",
       },
       {
-        url: "/images/project/Doge/1_Loading.webp",
+        url: "/images/project/Doge/1_Loading.png",
         text: "로딩 화면",
         type: "vertical",
       },
@@ -102,7 +102,7 @@ export const PROJECT_CONSTANT = [
         type: "vertical",
       },
       {
-        url: "/images/project/Doge/14_FriendChat.webp",
+        url: "/images/project/Doge/14_FriendChat.jpg",
         text: "친구 채팅 화면",
         type: "vertical",
       },
@@ -134,7 +134,7 @@ export const PROJECT_CONSTANT = [
         type: "vertical",
       },
       {
-        url: "/images/project/Doge/20_PartyInvite.webp",
+        url: "/images/project/Doge/20_PartyInvite.jpg",
         text: "파티 초대 팝업",
         type: "vertical",
       },
