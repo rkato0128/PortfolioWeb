@@ -138,6 +138,11 @@ const S = {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    
+
+    a {
+      color: #1779EC;
+    }
   `,
   SmallText: styled.span`
     font-weight: 200;
