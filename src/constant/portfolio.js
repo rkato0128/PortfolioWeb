@@ -5,7 +5,7 @@ export const PORTFOLIO_CONSTANT = [
     date: "23.05. - 23.08.",
     listDescription: "",
     description:
-      "사선 형태와 남색을 SF 컨셉의 핵심 비주얼 요소로 잡고,<br/>세로 인터페이스에서의 편의성을 중점으로 작업하였습니다.",
+      "연출을 중점으로 엘든 링을 재해석한 콘솔 RPG UI 컨셉을 작업하였습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
