@@ -10,6 +10,7 @@ export const PROJECT_CONSTANT = [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
+      "/images/icon/Icon_Tool_Figma.png",
     ],
     imageUrl: [
       "/images/project/Doge/0_Tiltle.webp",
@@ -326,6 +327,7 @@ export const PROJECT_CONSTANT = [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
+      "/images/icon/Icon_Tool_Figma.png",
     ],
     imageUrl: [
       "/images/project/SpookyFriends/Screenshot_Play.png",
