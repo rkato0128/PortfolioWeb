@@ -47,7 +47,7 @@ export const PORTFOLIO_CONSTANT = [
       {
         // 3rd
         url: "/images/portfolio/ConsoleRPG/Inven_KeyChange.png",
-        text: "컨트롤러 변경",
+        text: "PC 키 대응",
         type: "horizontal",
       },
       {

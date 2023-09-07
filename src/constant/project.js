@@ -197,7 +197,7 @@ export const PROJECT_CONSTANT = [
             content: [
               { text: "UI 셰이더 작업", type: "text" },
               { text: "캐릭터 셰이더 (클라이언트 개발자와 협업)", type: "text" },
-              { text: "VFX 바리에이션 셰이더 - 파티클 시스템의 CustomData를 통해서 이펙트 텍스처의 색 조정", type: "text" },
+              { text: "VFX 바리에이션 셰이더", type: "text" },
               // 들여쓰기 두번 텍스트 작성 예
               // {
               //   text: "TMP 셰이더 작업",
