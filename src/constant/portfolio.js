@@ -18,9 +18,9 @@ export const PORTFOLIO_CONSTANT = [
     type: "horizontal",
     // detail page
     source: "인게임 및 아이템 리소스는 엘든링, 월드맵 이미지는 어쌔신 크리드의 이미지를 사용하였습니다.<br/><br/>webp 포맷을 지원하는 브라우저로 열어주세요. 애플 OS에선 호환성이 낮습니다.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 끊긴다면 '우클릭-새탭에서 이미지 열기'로 봐주세요.",
-    // keyword: ["세로형", "사이버틱", "홀로그램"],
-    // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
-    // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
+    keyword: ["콘솔", "고딕", "텍스처"],
+    keyShape: "/images/portfolio/ConsoleRPG/KeyShape_ConsoleRPG.png",
+    colorPalette: "/images/portfolio/ConsoleRPG/Color Palette_ConsoleRPG.png",
     detailImage: [
       {
         // 1st
