@@ -195,47 +195,16 @@ export const PROJECT_CONSTANT = [
           {
             title: "셰이더 작성",
             content: [
-              { text: "UI 셰이더 작업", type: "text" },
               {
                 // 들여쓰기 텍스트
-                text: "추가 블렌딩 모드 셰이더",
-                content: ["text", "text"],
-                type: "list",
-              },
-              {
-                // 들여쓰기 텍스트
-                text: "LED 셰이더",
-                content: ["text", "text"],
-                type: "list",
-              },
-              {
-                // 들여쓰기 텍스트
-                text: "알파 그라데이션 셰이더",
-                content: ["text", "text"],
-                type: "list",
-              },
-              {
-                // 들여쓰기 텍스트
-                text: "SDF 셰이더",
-                content: ["text", "text"],
-                type: "list",
-              },
-              {
-                // 들여쓰기 텍스트
-                text: "월드맵 셰이더 (클라이언트 개발자와 협업)",
-                content: ["text", "text"],
-                type: "list",
-              },
-              {
-                // 들여쓰기 텍스트
-                text: "재련 레벨 셰이더 (클라이언트 개발자와 협업)",
-                content: ["text", "text"],
-                type: "list",
-              },
-              {
-                // 들여쓰기 텍스트
-                text: "Text Mesh Pro 셰이더 및 스크립트 - 추가 Underlay 옵션",
-                content: ["text", "text"],
+                text: "UI 셰이더 작업",
+                content: ["추가 블렌딩 모드 셰이더", "text"],
+                content: ["LED 셰이더", "text"],
+                content: ["알파 그라데이션 셰이더", "text"],
+                content: ["SDF 셰이더", "text"],
+                content: ["월드맵 셰이더 (클라이언트 개발자와 협업)", "text"],
+                content: ["재련 레벨 셰이더 (클라이언트 개발자와 협업)", "text"],
+                content: ["Text Mesh Pro 셰이더 및 스크립트 - 추가 Underlay 옵션", "text"],
                 type: "list",
               },
               { text: "캐릭터 셰이더 (클라이언트 개발자와 협업)", type: "text" },
