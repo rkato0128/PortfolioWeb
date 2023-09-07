@@ -12,8 +12,8 @@ export const PORTFOLIO_CONSTANT = [
       "/images/icon/Icon_Tool_Ai.png",
     ],
     imageUrl: [
-      "/images/portfolio/ConsoleRPG/Inven_Open.webp",
-      "/images/portfolio/ConsoleRPG/Skill.webp",
+      "/images/portfolio/ConsoleRPG/Play.webp",
+      "/images/portfolio/ConsoleRPG/Inven_KeyChange.png",
     ],
     type: "horizontal",
     // detail page
@@ -24,7 +24,7 @@ export const PORTFOLIO_CONSTANT = [
     detailImage: [
       {
         // 1st
-        url: "/images/portfolio/ConsoleRPG/SocialMenu.webp",
+        url: "/images/portfolio/ConsoleRPG/Play.webp",
         text: "전투",
         type: "horizontal",
       },
@@ -34,36 +34,42 @@ export const PORTFOLIO_CONSTANT = [
         type: "horizontal",
       },
       {
+        // 2nd
         url: "/images/portfolio/ConsoleRPG/SocialMenu.webp",
         text: "소셜 메뉴",
         type: "horizontal",
       },
       {
-        // 2nd
         url: "/images/portfolio/ConsoleRPG/Inven_Open.webp",
         text: "인벤토리",
         type: "horizontal",
       },
       {
-        
+        // 3rd
+        url: "/images/portfolio/ConsoleRPG/Inven_KeyChange.png",
+        text: "컨트롤러 변경",
+        type: "horizontal",
+      },
+      {
         url: "/images/portfolio/ConsoleRPG/Skill.webp",
         text: "스킬 습득",
         type: "horizontal",
       },
       {
+        // 4th
         url: "/images/portfolio/ConsoleRPG/Dialog.webp",
         text: "NPC 대화",
         type: "horizontal",
       },
       {
-        // 3rd
         url: "/images/portfolio/ConsoleRPG/WorldMap.webp",
         text: "월드맵",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/ConsoleRPG/Inven_KeyChange.webp",
-        text: "컨트롤러 변경",
+        // 5th
+        url: "/images/portfolio/ConsoleRPG/Buff.webp",
+        text: "버프",
         type: "horizontal",
       },
     ],
