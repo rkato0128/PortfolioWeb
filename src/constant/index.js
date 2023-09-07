@@ -25,7 +25,7 @@ export const HISTORY_CONSTANT = {
     {
       name: "(주) 하이브로",
       job: "UI/UX 디자이너",
-      date: "2019.06 - 10.",
+      date: "2019.06 - 11.",
       workDetail: [
         "프로젝트S<br/>UI/UX 및 이펙트 작업",
         "드래곤빌리지<br/>라이브 UI 작업",
