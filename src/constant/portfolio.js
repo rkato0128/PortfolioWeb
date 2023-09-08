@@ -72,6 +72,11 @@ export const PORTFOLIO_CONSTANT = [
         text: "버프",
         type: "horizontal",
       },
+      {
+        url: "/images/portfolio/ConsoleRPG/Resources.jpg",
+        text: "리소스",
+        type: "horizontal",
+      },
     ],
   },
 
