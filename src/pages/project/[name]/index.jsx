@@ -360,7 +360,7 @@ const S = {
 
     ol {
       margin-top: 5px;
-      margin-bottom: 25px;
+      margin-bottom: 50px;
       padding-inline-start: 25px;
     }
   `,

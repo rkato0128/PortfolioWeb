@@ -13,7 +13,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     imageUrl: [
       "/images/portfolio/ConsoleRPG/Play.webp",
-      "/images/portfolio/ConsoleRPG/Inven_KeyChange.png",
+      "/images/portfolio/ConsoleRPG/WorldMap_Thumbnail.jpg",
     ],
     type: "horizontal",
     // detail page
