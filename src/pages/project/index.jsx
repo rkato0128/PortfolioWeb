@@ -32,7 +32,7 @@ function Project() {
                   key={item}
                   src={item}
                   alt="image"
-                  viewType={project.type}
+                  viewType={project.imageType ?? project.type}
                 />
               ))}
             </S.ImageWrapper>
@@ -102,7 +102,7 @@ const S = {
     margin-left: auto;
   `,
   GameImage: styled.img`
-    width: ${(props) => (props.viewType === "vertical" ? "180px" : "384px")};
+    width: ${(props) => (props.viewType === "horizontal" ? "384px" : "180px")};
     height: auto;
     /* ${(props) =>
       props.type === "vertical"

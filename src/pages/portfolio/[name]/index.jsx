@@ -41,7 +41,9 @@ function PortfolioDetail() {
                     dangerouslySetInnerHTML={{ __html: portfolio.description }}
                   />
                   {portfolio.source.length > 0 && (
-                    <S.SmallText dangerouslySetInnerHTML={{ __html: portfolio.source }}/>
+                    <S.SmallText
+                      dangerouslySetInnerHTML={{ __html: portfolio.source }}
+                    />
                   )}
                 </S.GameDesc>
               </S.InfoWrapper>
@@ -73,18 +75,26 @@ function PortfolioDetail() {
                   )}
                 </S.VisualConcept>
               )}
-              <S.DetailImageWrapper>
+              <S.DetailImageWrapper
+                viewType={portfolio.type}
+                imageType={portfolio.imageType}
+              >
                 {portfolio.detailImage.map((item, index) => (
                   <S.DetailImage
                     key={index}
+                    id={item.id}
                     onClick={() => {
+                      if (item.type === "video") return;
                       setIsOpen(true);
                       setSelectedIndex(index);
                     }}
                   >
                     <S.GameImage
+                      as={item.type === "video" ? "video" : "img"}
+                      controls
                       viewType={item.type}
                       src={item.url}
+                      width={item.width}
                       alt="게임 이미지"
                     />
                     <span>{item.text}</span>
@@ -138,10 +148,9 @@ const S = {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    
 
     a {
-      color: #1779EC;
+      color: #1779ec;
     }
   `,
   SmallText: styled.span`
@@ -159,7 +168,12 @@ const S = {
     margin-left: auto;
   `,
   GameImage: styled.img`
-    width: ${(props) => (props.viewType === "vertical" ? "384px" : "588px")};
+    width: ${(props) =>
+      props.width
+        ? `${props.width}`
+        : props.viewType === "vertical"
+        ? "384px"
+        : "588px"};
     height: auto;
   `,
   IconWrapper: styled.ul`

@@ -103,19 +103,22 @@ function ImageSlideModal({ images, selectedImageIndex, isOpen, handleClose }) {
         <S.Content>
           <S.CarouselWrapper>
             <S.Carousel ref={containerRef}>
-              {images.map((image, i) => (
-                <motion.div
-                  key={i}
-                  style={{
-                    ...pageStyle,
-                    x,
-                    left: `${i * 100}%`,
-                    right: `${i * 100}%`,
-                  }}
-                >
-                  <S.GameImg src={image.url} />
-                </motion.div>
-              ))}
+              {images.map((image, i) => {
+                if (image.type === "video") return null;
+                return (
+                  <motion.div
+                    key={i}
+                    style={{
+                      ...pageStyle,
+                      x,
+                      left: `${i * 100}%`,
+                      right: `${i * 100}%`,
+                    }}
+                  >
+                    <S.GameImg src={image.url} />
+                  </motion.div>
+                );
+              })}
               <S.Prev onClick={() => handlePrev()}>
                 <ArrowLine width={16} height={32} />
               </S.Prev>
