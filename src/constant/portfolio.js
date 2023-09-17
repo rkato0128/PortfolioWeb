@@ -5,7 +5,7 @@ export const PORTFOLIO_CONSTANT = [
     date: "23.05. - 23.08.",
     listDescription: "",
     description:
-      '연출을 중점으로 엘든 링을 재해석한 콘솔 RPG UI 컨셉을 작업하였습니다.<br/><br/><a href="https://youtu.be/LHcKxOevF5U?si=MqiCynJ9N9nS6UVR" target="_blank">연출 고화질 영상</a>',
+      "연출을 중점으로 엘든 링을 재해석한 콘솔 RPG UI 컨셉을 작업하였습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -15,7 +15,8 @@ export const PORTFOLIO_CONSTANT = [
       "/images/portfolio/ConsoleRPG/Play.webp",
       "/images/portfolio/ConsoleRPG/WorldMap_Thumbnail.jpg",
     ],
-    type: "horizontal",
+    type: "video",
+    imageType: "horizontal",
     // detail page
     source:
       "인게임 및 아이템 리소스는 엘든링, 월드맵 이미지는 어쌔신 크리드의 이미지를 사용하였습니다.<br/><br/>webp 포맷을 지원하는 브라우저로 열어주세요. 애플 OS에선 호환성이 낮습니다.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 끊긴다면 '우클릭-새탭에서 이미지 열기'로 봐주세요.",
@@ -24,59 +25,76 @@ export const PORTFOLIO_CONSTANT = [
     colorPalette: "/images/portfolio/ConsoleRPG/Color Palette_ConsoleRPG.png",
     detailImage: [
       {
+        // 0
+        url: "/images/portfolio/ConsoleRPG/TotalMotion.mp4",
+        text: "전체 연출 영상",
+        type: "video",
+        width : "100%",
+      },
+      {
         // 1st
         url: "/images/portfolio/ConsoleRPG/Play.webp",
         text: "전투",
         type: "horizontal",
+        width : "100%",
       },
       {
         url: "/images/portfolio/ConsoleRPG/GetItem.webp",
         text: "아이템 획득",
         type: "horizontal",
+        width : "100%",
       },
       {
         // 2nd
         url: "/images/portfolio/ConsoleRPG/SocialMenu.webp",
         text: "소셜 메뉴",
         type: "horizontal",
+        width : "100%",
       },
       {
         url: "/images/portfolio/ConsoleRPG/Inven_Open.webp",
         text: "인벤토리",
         type: "horizontal",
+        width : "100%",
       },
       {
         // 3rd
         url: "/images/portfolio/ConsoleRPG/Inven_KeyChange.png",
         text: "PC 키 대응",
         type: "horizontal",
+        width : "100%",
       },
       {
         url: "/images/portfolio/ConsoleRPG/Skill.webp",
         text: "스킬 습득",
         type: "horizontal",
+        width : "100%",
       },
       {
         // 4th
         url: "/images/portfolio/ConsoleRPG/Dialog.webp",
         text: "NPC 대화",
         type: "horizontal",
+        width : "100%",
       },
       {
         url: "/images/portfolio/ConsoleRPG/WorldMap.webp",
         text: "월드맵",
         type: "horizontal",
+        width : "100%",
       },
       {
         // 5th
         url: "/images/portfolio/ConsoleRPG/Buff.webp",
         text: "버프",
         type: "horizontal",
+        width : "100%",
       },
       {
         url: "/images/portfolio/ConsoleRPG/Resources.jpg",
         text: "리소스",
         type: "horizontal",
+        width : "100%",
       },
     ],
   },
@@ -253,72 +271,73 @@ export const PORTFOLIO_CONSTANT = [
       },
     ],
   },
-  {
-    name: "TEST",
-    genre: ["모바일", "퍼즐", "캐주얼"],
-    date: "19.10. - 19.12.",
-    listDescription: "",
-    description:
-      "별의 커비 IP를 바탕으로, 캐주얼 게임 컨셉으로 디자인을 진행했습니다.<br/>아케이드 게임기의 디자인적 요소를 UI에 녹여내려고 노력했습니다.",
-    iconUrl: [
-      "/images/icon/Icon_Tool_Ae.png",
-      "/images/icon/Icon_Tool_Ps.png",
-      "/images/icon/Icon_Tool_Ai.png",
-    ],
-    imageUrl: [
-      "/images/portfolio/Kirby/1_Ingame_Motion.gif",
-      "/images/portfolio/Kirby/2_Main.png",
-      "/images/portfolio/Kirby/3_Stage.png",
-      "/images/portfolio/Kirby/4_Character List.png",
-    ],
-    // type이 video이 일때는 imageType을 넣어라
-    type: "video",
-    imageType: "vertical",
-    source:
-      "캐릭터 이미지는 별의 커비 스타 얼라이즈의 리소스를 사용하였습니다.",
-    keyword: ["캐주얼", "아케이드 게임기", "음식"],
-    keyShape: "/images/portfolio/Kirby/KeyShape_Kirby.png",
-    colorPalette: "/images/portfolio/Kirby/Color Palette_Kirby.png",
-    detailImage: [
-      // type이 video이 일때는 url에 video를 넣어라
-      // width 를 넣어라
-      // image width: vertical 384px ,horizon 588px ,100%
-      {
-        url: "/images/video1.mp4",
-        text: "플레이 화면",
-        type: "video",
-        width: "100%",
-      },
-      {
-        url: "/images/portfolio/Kirby/2_Main.png",
-        text: "메인 화면",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/Kirby/3_Stage.png",
-        text: "스테이지 준비",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/Kirby/4_Character List.png",
-        text: "캐릭터 목록",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/Kirby/5_Shop.png",
-        text: "상점",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/Kirby/6_Resources.jpg",
-        text: "UI 리소스",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/Kirby/7_Illust.png",
-        text: "배경 일러스트",
-        type: "vertical",
-      },
-    ],
-  },
+
+  // {
+  //   name: "TEST",
+  //   genre: ["모바일", "퍼즐", "캐주얼"],
+  //   date: "19.10. - 19.12.",
+  //   listDescription: "",
+  //   description:
+  //     "별의 커비 IP를 바탕으로, 캐주얼 게임 컨셉으로 디자인을 진행했습니다.<br/>아케이드 게임기의 디자인적 요소를 UI에 녹여내려고 노력했습니다.",
+  //   iconUrl: [
+  //     "/images/icon/Icon_Tool_Ae.png",
+  //     "/images/icon/Icon_Tool_Ps.png",
+  //     "/images/icon/Icon_Tool_Ai.png",
+  //   ],
+  //   imageUrl: [
+  //     "/images/portfolio/Kirby/1_Ingame_Motion.gif",
+  //     "/images/portfolio/Kirby/2_Main.png",
+  //     "/images/portfolio/Kirby/3_Stage.png",
+  //     "/images/portfolio/Kirby/4_Character List.png",
+  //   ],
+  //   // type이 video이 일때는 imageType을 넣어라
+  //   type: "video",
+  //   imageType: "vertical",
+  //   source:
+  //     "캐릭터 이미지는 별의 커비 스타 얼라이즈의 리소스를 사용하였습니다.",
+  //   keyword: ["캐주얼", "아케이드 게임기", "음식"],
+  //   keyShape: "/images/portfolio/Kirby/KeyShape_Kirby.png",
+  //   colorPalette: "/images/portfolio/Kirby/Color Palette_Kirby.png",
+  //   detailImage: [
+  //     // type이 video이 일때는 url에 video를 넣어라
+  //     // width 를 넣어라
+  //     // image width: vertical 384px ,horizon 588px ,100%
+  //     {
+  //       url: "/images/video1.mp4",
+  //       text: "플레이 화면",
+  //       type: "video",
+  //       width: "100%",
+  //     },
+  //     {
+  //       url: "/images/portfolio/Kirby/2_Main.png",
+  //       text: "메인 화면",
+  //       type: "vertical",
+  //     },
+  //     {
+  //       url: "/images/portfolio/Kirby/3_Stage.png",
+  //       text: "스테이지 준비",
+  //       type: "vertical",
+  //     },
+  //     {
+  //       url: "/images/portfolio/Kirby/4_Character List.png",
+  //       text: "캐릭터 목록",
+  //       type: "vertical",
+  //     },
+  //     {
+  //       url: "/images/portfolio/Kirby/5_Shop.png",
+  //       text: "상점",
+  //       type: "vertical",
+  //     },
+  //     {
+  //       url: "/images/portfolio/Kirby/6_Resources.jpg",
+  //       text: "UI 리소스",
+  //       type: "vertical",
+  //     },
+  //     {
+  //       url: "/images/portfolio/Kirby/7_Illust.png",
+  //       text: "배경 일러스트",
+  //       type: "vertical",
+  //     },
+  //   ],
+  // },
 ];
