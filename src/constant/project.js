@@ -451,7 +451,7 @@ export const PROJECT_CONSTANT = [
       },
     ],
   },
-  
+
   // {
   //   name: "TEST",
   //   genre: ["모바일", "ZEPETO", "수집형", "캐주얼"],
@@ -481,7 +481,7 @@ export const PROJECT_CONSTANT = [
   //   // colorPalette: "/images/portfolio/projectS/colorPalette.png",
 
   //   detailImage: [
-  //     // type이 video이 일때는 url에 video를 넣어라
+  //     // type이 video일때는 url에 video를 넣어라
   //     // width 를 넣어라
   //     // image width: vertical 384px ,horizon 588px ,100%
   //     {
