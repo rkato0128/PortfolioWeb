@@ -5,7 +5,7 @@ export const PORTFOLIO_CONSTANT = [
     date: "23.05. - 23.08.",
     listDescription: "",
     description:
-      "연출을 중점으로 엘든 링을 재해석한 콘솔 RPG UI 컨셉을 작업하였습니다.",
+      "언리얼을 사용해서 연출을 중점으로 엘든 링을 재해석한 콘솔 RPG UI 컨셉을 작업하였습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -93,6 +93,19 @@ export const PORTFOLIO_CONSTANT = [
       {
         url: "/images/portfolio/ConsoleRPG/Resources.jpg",
         text: "리소스",
+        type: "horizontal",
+        width : "588px",
+      },
+      {
+        // 6th
+        url: "/images/portfolio/ConsoleRPG/UMG.jpg",
+        text: "UMG 구조",
+        type: "horizontal",
+        width : "588px",
+      },
+      {
+        url: "/images/portfolio/ConsoleRPG/Material.jpg",
+        text: "메테리얼 노드 구조",
         type: "horizontal",
         width : "588px",
       },
