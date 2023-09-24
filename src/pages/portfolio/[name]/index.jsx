@@ -85,8 +85,13 @@ function PortfolioDetail() {
                     id={item.id}
                     onClick={() => {
                       if (item.type === "video") return;
+
+                      if (portfolio.type === "video") {
+                        setSelectedIndex(index - 1);
+                      } else {
+                        setSelectedIndex(index);
+                      }
                       setIsOpen(true);
-                      setSelectedIndex(index);
                     }}
                   >
                     <S.GameImage
